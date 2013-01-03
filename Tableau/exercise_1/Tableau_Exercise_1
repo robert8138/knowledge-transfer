@@ -1,0 +1,82 @@
+
+SETTING UP REMOTE DESKTOP CONNECTION (RDC):
+
+- connection URL: "analytics.wapolabs.com:3389" or "ec2-50-17-32-53.compute-1.amazonaws.com"
+- username: Administrator
+- passowrd: Somalia56
+
+
+SETTING UP TABLEAU LISCENCE:
+
+- need activiation key, visit google doc "https://docs.google.com/a/wapolabs.com/document/d/1GLDhRPYu8V_fUF8dacdcyemCZuY8PvZch7O9ja1lGdg/edit"
+- the activation key from Jeff Chin works. Use that to log on to Tableau.
+- download tableau 7.0
+
+SETTING UP VERTICA DRIVER FOR TABLEAU:
+
+- site: my.vertica.com
+- username: jay@wapolabs.com
+- password: wapolabs1
+- download windows 5.1 Vertica driver (Took down Tableau 10 minutes to install this).
+
+CONNECTING TO VERTICA FROM TABLEAU:
+
+- connect to data -> Vertica =>
+- server name: (go to infra.wapolabs.com) and then find any of the boxes that connects to Vertica. "ip-10-58-113-16.ec2.internal"
+- database name: wapodw
+- username: tableau
+- password: R3p0rt1n6
+
+    once you have the connection, you could connect it live or extract the data:
+    - when constructing the dashbaord/worksheet, it is better to connect live.
+    - but when you set up the plot and you know what you want to display, it's better to do extracts to save
+      storage space.
+    - by looking at the top left icon of the connection, you will see if you are connecting live (one database sign)
+      or you are connecting to an extract (2 database sign).
+
+TABLEAU EXERCISE 1:
+
+"produce a line graph that gives me the 'frontpage_view_per_person' as well as 'frontpage_view_per_person for individuals who have at least one frontpage view'"
+
+Typically, the requests for reporting is the following:
+    - someone sent you an email about the need to know a metric, for a particular product, at a given time.
+    - you would then try to figure out from "wapo_stats" and "wapo_entity_agg"
+    - you then would drill down to see category, name, description and key to figure out whether that is
+      something that you need for constructing the plot.
+    - then you would create calculated fields for the attribtues that you are looking at.
+    - put things into column or rows to produce the plot.
+    - and then you would extract the data you need and replot.
+    - Finally, you will then use the extract to publish the report.
+
+
+"wapo_stats" and "wapo_entity_agg" are the two tables that you will often use to produce the graphs. Often,
+you want to use "v_wapo_stats" and "v_wapo_entity_agg" that leverage the VIEW feature in SQL. Essentially, it 
+joins the segment look up table with the wapo_stats and wapo_entity_agg so that you don't have to join everytime 
+you need to use these two tables. "wapo_entity_agg" contains more detailed information on the publisher/advertising level.
+
+Each of the rows in these two tables repreent a SQL scripts that was written to fulfill data requests from other people. The run date, what is being calculated and the "value" is stored in that row. Often time the requests are re-occuring, but there will be chances where you might have to write your own SQL script and make it a routine.
+
+A convenient thing to do is to do a group by to see what information you are keeping track of:
+
+    select
+        category, name, period, description, key
+        from v_wapo_stats
+        group by 1,2,3,4,5;
+
+FEATURES THAT WERE INTRODUCED IN EXERCISEW 1:
+    - create calculated fields. the business logic is very similar to SQL, except you have to use [] for the
+      attribute variables.
+    - remember the column, row model that we are playing with in the tableau world.
+    - we also need to filter things by "segment" or by "date" or by "product"
+    - we can create "parameter" to do something like rolling average. 
+    - we can make the "parameter" as a drop down menu and we can refer the parameter in creating something useful
+      as a new calculated field as well.
+    - we can add reference line to plot the max, or min.
+    - we can jutaxpose the same plot to create dual axis. Remember to click "dual axis" and "synchronize dual axis"
+
+
+You can check the status of the query running in vertica.
+
+- select * from v_monitor.sessions;
+
+- there is also select close.session('session id')????

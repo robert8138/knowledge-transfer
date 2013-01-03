@@ -1,0 +1,148 @@
+TABLEAU EXERCISE 4
+
+QUESTION:
+    We wish to provide our publishers a report on where users are first engaged in the publishers' articles (entry point analysis).
+
+GOAL:
+    This is one step harder than what we have done in the earlier exercises, because:
+        1. The request is new, so we do not have the data/SQL script already in placed in wapo_entity_agg. As a result,
+           we have to write our own SQL script to collect those data before we can create the report in tableau.
+
+        2. The report specification (this was really thought and designed by Johnathon at the time) requires me to do:
+            - A table that consists of publisher, total reads, and top 5 entry points. Specifically, we want the top 5
+              entry points and their volumes represented by bars.
+            - We also want to create a line graph that shows the total read of that publisher in a specific day. The tricky
+              part here is that whenever we click on a publisher on the table (mentioned above), the line graph would change
+              and only show the data for that publisher.
+            - A more detail break down of the entry point, reads, and % of reads.
+
+LEARNING:
+
+
+1. WRITING THE SQL SCRIPT:
+
+Often, we need to think about how to grab these data from one or more of the atomic tables (e.g. wapo_fact) and put the data 
+in a temporary table. 
+
+Then, it is generally a good practice to put data in a "wapo_*_dev" table before you put them into the real "wapo_entity_agg" 
+or "wapo_stats" table.
+
+One important process here is that when filling in the data into "wapo_*_dev", we need to make sure that our data conforms with
+the format in "wapo_*_dev" tables.
+
+Finally, if you ever need to give tableau permission to access these table, you need something like: "grant select on
+wapo_entity_agg_dev to tableau"
+
+
+
+2. CREATING THE TABLEAU DASHBOARD:
+
+--- create table ---
+
+One of the common things that I run into when constructing the table is that I often need to add another column to display some
+information. For example, I want to have an extra column that represent total reads for each publisher after the publisher column.
+Tkey trick here is to put the extra variable under "DISCRETE". 
+
+According to Johnathon, the canvas always have two parts: The left and the right. The left part are usually the place where you
+put down the statistics (by column), and the right part is where you can partition stuff by column variable, like date. You often
+play with the discrete variable on the LEFT, for displaying information. You often play with the continuous varaible on the RIGHT
+be it to be ploting a bar graph, line graph...etc. If you are not plotting anything, then putting VALUEs in label would even give
+you a table of numbers.
+
+
+I also ran into a problem of only displaying only the top 5 entry point statistics. There is a hack around this:
+    - First, figure out which top 5 "entry points" you want to include, the trick to do this is: once you add entry_point_bucket
+      onto column, you can sort the column order by a specific value using "SORT".
+
+    - You can then overlay the Tableau "index()" function to name the columns with numerical values.
+
+    - Finally, you would use a calculated field, called "isTop5" to filter the results. You would hide away those where isTop5 is
+      is false. (click on the false number and hide them).
+
+The above is just an exercise, what we ended up doing instead, was we bundle the buckets together. If you take a look at the final
+visualtion for the table, thigns are quite clear: 
+    - "Publisher" and "Total Reads" are used as row dimensions on the LEFT.
+    - "entry_point_bucket" bundles the entry points into 6 categories so things are cleaner and is being place as a COLUMN.
+    - value is then used in the RIGHT canvas, but because of the row (publisher) and column (entry_point_bucket), the value are
+      distributed according to those partitions. 
+    - The values then are plotted using bar chart, but that can be changed easily.
+    - Finally, there is the issue of ploting % on top of the bar chart so people can see. That's where label comes in handy. 
+      Here, however, we need to create a percentage_read calculated field in order to display %. The formula for it is easy:
+      it is just "sum([value])/total(sum([value])". 
+        -- The [value] is just that single data point partition by rows and columns,
+        -- sum([value]) is making it an aggregate because we need to divide that by a aggregate (kind of int/float is not going 
+           to work, so need to cast it as a aggregate). 
+        -- Finally, total(sum([value])) is an aggregate function that sum the rows across,
+           you have the option to sum across,down...etc.
+
+-- create the top line/shaded graph --
+
+This is pretty straightforward, another cool thing I learn along the way is to entry_point_bucket under color, that way, the line
+graph is shaded and people get to see a stack line graph where area under the curve represent the mass.
+
+-- create the entry point detail table --
+
+The challenge here, again is to have on the LEFT, some statistics, and on the right, line charts for how each of the entry point
+has change over time. 
+
+Initially, when I try this, I got the total reads for each publisher down, and I was trying to get the % read from that entry
+point (definition: sum([value])/total(sum([value])) ), but once I add in date, I got a bunch of percentages, partition by date.
+This is not right, and it is not what I want. STILL FUZZY, but according to Johnathon, it was just paritioning everything by date and publisher all together (not helpful).
+
+
+    -- solution to this problem --
+        The way we solve this, suggested by Johnathon is:
+        - create a "total_read_across/publisher" that does total(sum([value)) across that row.
+        - create a "total_read_down" that does total(sum([value]) first across, then down. Essentially, it takes 
+          the row sum first, and then the column sum to get the total read counts (across all publishers).
+        - finally, we create "% of reads" that take the ratio of "total_read_across/publisher"/"total_read_down
+          to get the percentage of read from that entry point.
+
+The rest then are just as usual. Plot "VALUE" as a continuous variable, and use line graph, it will then show you the trend."
+
+
+4. PUBLISH ONTO ANALYTICS.WAPOLABS.COM
+
+username: admin
+password: Somalia56
+
+Once your dashboard visualization is complete, you are ready to publish. To publish, go to:
+    - Server -> Publish Workbook -> Enter (username,password) above ->
+    - enter Project (the bukcets have been defined by Johnathon, but feel free to define my own).
+    - Give it a Name of the report, make sure it's business friendly
+    - View permissions, usually just set it to "Trove Report Users" (available to all wapolabs people).
+    - views to share, just click on the dashboard you want to share.
+    - often show sheets as Tabs are helpful if you have multiple dashboard
+    - uncheck selection would allow you to just have a plain view.
+    - go to "authetication", and choose "embedded password" so people are not required to enter
+      password everytime they access the dashboard.
+
+Once the report is generated and push to the server, you can view them in a browser.
+    - In particular, there are 4 buttons on the top.
+        - the first one is for exporting the visualization
+        - the second one just revert back to the original setting if you have a lot of interactive features.
+        - the third one, when you pause automatic updates, it would not update even if you change the 
+          interactive features, it will do everything in the end.
+        - the last one just refreshes the data.
+    
+    - Another very handy hack you have is that you can add ".png" directly after the url, it would give you the png file
+      and you can just email to the publisher. Furthermore, you can do filter on publisher by typing (after the url), 
+      "?field_name=XXX" (e.g. "?Publisher=Slate" to only look at visualiation for slate)
+    
+    - Often, the interactive visualization and the report sent to the publishers would be slightly different, you want
+      to adjust the visualization to make it look good in a email attachment.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

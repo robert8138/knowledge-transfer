@@ -1,0 +1,48 @@
+Data -> Extract Data -> Add filters (attributes that you used to construct the plots).
+
+CREATING DASHBOARDS:
+- Remember to give meaningful names to your worksheet/graphs.
+
+- Drag them together onto 1 single dashboard.
+    - Different worksheets can have different connections or they can operate on
+      different extracts.
+
+- Set the size by right clicking edit: set width/height (e.g. 1250 x 1000)
+
+- Create quick filter by clicking on the graphs and select "quick filter".
+
+- Click on the triangle to change it to, say a "compact list"/drop down menu.
+
+- You can also add "captions" to give more explanations.
+    - In captions, you can add feilds so that when you change the drop down menu, 
+      the display will change as well.
+
+- Very often, in order to make the drop down look cleaner, you might have to concatenate
+  different attribute names to make it look more consistent. 
+    - The way to do is to create calculated field, and use "+" sign (like in Java) 
+      to concatenate two strings. Then you want to create a quick filter, change it 
+      to drop down menu, and you will have a much cleaner wdiget.
+
+- Very often, you also want to create a start_date_selector and end_date_selector, and make them
+  as drop down menus so people have control on what date range they want to see the plot. The steps
+  involved in creating that functionality are:
+    1. create "start_date" & "end_date" as calculated field, apply the following business logic:
+        "if [start_date_selector] = "yesterday" then DATEADD("day",-1,TODAY()) 
+        else Date([start_date_selector]) end"
+    2. create another calculated field called "is_valid_date" with the business logic:
+        "[run_dt] <= [end_date] AND [run_dt] >= [start_date]"
+    3. You would then put this "is_valid_date" in the filter so that when you change the [start_date] and [end_date],
+        the filter knows which time slice you are looking at.
+
+- Also, a lot of time, you can make the filters (on the top left corner) a global filter. That way,
+  the same functionality (for exmaple, a time slice [start_date]/[end_date] would be applied to all graphs).
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,2329 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<workbook version='8.0' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <!-- build 7000.12.1122.2200                -->
+  <preferences>
+  </preferences>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='8.0'>
+      <aliases enabled='yes' />
+      <column caption='smoothing_window' datatype='integer' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='10'>
+        <calculation class='tableau' formula='10' />
+        <range max='20' min='1' />
+      </column>
+      <column caption='start_date_selector' datatype='string' name='[Parameter 2]' param-domain-type='list' role='measure' type='nominal' value='&quot;01/16/2012&quot;'>
+        <calculation class='tableau' formula='&quot;01/16/2012&quot;' />
+        <aliases>
+          <alias key='&quot;yesterday&quot;' value='yesterday' />
+        </aliases>
+        <members>
+          <member alias='yesterday' value='&quot;yesterday&quot;' />
+          <member value='&quot;01/01/2012&quot;' />
+          <member value='&quot;01/02/2012&quot;' />
+          <member value='&quot;01/03/2012&quot;' />
+          <member value='&quot;01/04/2012&quot;' />
+          <member value='&quot;01/05/2012&quot;' />
+          <member value='&quot;01/06/2012&quot;' />
+          <member value='&quot;01/07/2012&quot;' />
+          <member value='&quot;01/08/2012&quot;' />
+          <member value='&quot;01/09/2012&quot;' />
+          <member value='&quot;01/10/2012&quot;' />
+          <member value='&quot;01/11/2012&quot;' />
+          <member value='&quot;01/12/2012&quot;' />
+          <member value='&quot;01/13/2012&quot;' />
+          <member value='&quot;01/14/2012&quot;' />
+          <member value='&quot;01/15/2012&quot;' />
+          <member value='&quot;01/16/2012&quot;' />
+          <member value='&quot;01/17/2012&quot;' />
+          <member value='&quot;01/18/2012&quot;' />
+          <member value='&quot;01/19/2012&quot;' />
+          <member value='&quot;01/20/2012&quot;' />
+          <member value='&quot;01/21/2012&quot;' />
+          <member value='&quot;01/22/2012&quot;' />
+          <member value='&quot;01/23/2012&quot;' />
+          <member value='&quot;01/24/2012&quot;' />
+          <member value='&quot;01/25/2012&quot;' />
+          <member value='&quot;01/26/2012&quot;' />
+          <member value='&quot;01/27/2012&quot;' />
+          <member value='&quot;01/28/2012&quot;' />
+          <member value='&quot;01/29/2012&quot;' />
+          <member value='&quot;01/30/2012&quot;' />
+          <member value='&quot;01/31/2012&quot;' />
+          <member value='&quot;02/01/2012&quot;' />
+          <member value='&quot;02/02/2012&quot;' />
+          <member value='&quot;02/03/2012&quot;' />
+          <member value='&quot;02/04/2012&quot;' />
+          <member value='&quot;02/05/2012&quot;' />
+          <member value='&quot;02/06/2012&quot;' />
+          <member value='&quot;02/07/2012&quot;' />
+          <member value='&quot;02/08/2012&quot;' />
+          <member value='&quot;02/09/2012&quot;' />
+          <member value='&quot;02/10/2012&quot;' />
+          <member value='&quot;02/11/2012&quot;' />
+          <member value='&quot;02/12/2012&quot;' />
+          <member value='&quot;02/13/2012&quot;' />
+          <member value='&quot;02/14/2012&quot;' />
+          <member value='&quot;02/15/2012&quot;' />
+          <member value='&quot;02/16/2012&quot;' />
+          <member value='&quot;02/17/2012&quot;' />
+          <member value='&quot;02/18/2012&quot;' />
+          <member value='&quot;02/19/2012&quot;' />
+          <member value='&quot;02/20/2012&quot;' />
+          <member value='&quot;02/21/2012&quot;' />
+          <member value='&quot;02/22/2012&quot;' />
+          <member value='&quot;02/23/2012&quot;' />
+          <member value='&quot;02/24/2012&quot;' />
+          <member value='&quot;02/25/2012&quot;' />
+          <member value='&quot;02/26/2012&quot;' />
+          <member value='&quot;02/27/2012&quot;' />
+          <member value='&quot;02/28/2012&quot;' />
+          <member value='&quot;02/29/2012&quot;' />
+          <member value='&quot;03/01/2012&quot;' />
+          <member value='&quot;03/02/2012&quot;' />
+          <member value='&quot;03/03/2012&quot;' />
+          <member value='&quot;03/04/2012&quot;' />
+          <member value='&quot;03/05/2012&quot;' />
+          <member value='&quot;03/06/2012&quot;' />
+          <member value='&quot;03/07/2012&quot;' />
+          <member value='&quot;03/08/2012&quot;' />
+          <member value='&quot;03/09/2012&quot;' />
+          <member value='&quot;03/10/2012&quot;' />
+          <member value='&quot;03/11/2012&quot;' />
+          <member value='&quot;03/12/2012&quot;' />
+          <member value='&quot;03/13/2012&quot;' />
+          <member value='&quot;03/14/2012&quot;' />
+          <member value='&quot;03/15/2012&quot;' />
+          <member value='&quot;03/16/2012&quot;' />
+          <member value='&quot;03/17/2012&quot;' />
+          <member value='&quot;03/18/2012&quot;' />
+          <member value='&quot;03/19/2012&quot;' />
+          <member value='&quot;03/20/2012&quot;' />
+          <member value='&quot;03/21/2012&quot;' />
+          <member value='&quot;03/22/2012&quot;' />
+          <member value='&quot;03/23/2012&quot;' />
+          <member value='&quot;03/24/2012&quot;' />
+          <member value='&quot;03/25/2012&quot;' />
+          <member value='&quot;03/26/2012&quot;' />
+          <member value='&quot;03/27/2012&quot;' />
+          <member value='&quot;03/28/2012&quot;' />
+          <member value='&quot;03/29/2012&quot;' />
+          <member value='&quot;03/30/2012&quot;' />
+          <member value='&quot;03/31/2012&quot;' />
+          <member value='&quot;04/01/2012&quot;' />
+          <member value='&quot;04/02/2012&quot;' />
+          <member value='&quot;04/03/2012&quot;' />
+          <member value='&quot;04/04/2012&quot;' />
+          <member value='&quot;04/05/2012&quot;' />
+          <member value='&quot;04/06/2012&quot;' />
+          <member value='&quot;04/07/2012&quot;' />
+          <member value='&quot;04/08/2012&quot;' />
+          <member value='&quot;04/09/2012&quot;' />
+          <member value='&quot;04/10/2012&quot;' />
+          <member value='&quot;04/11/2012&quot;' />
+          <member value='&quot;04/12/2012&quot;' />
+          <member value='&quot;04/13/2012&quot;' />
+          <member value='&quot;04/14/2012&quot;' />
+          <member value='&quot;04/15/2012&quot;' />
+          <member value='&quot;04/16/2012&quot;' />
+          <member value='&quot;04/17/2012&quot;' />
+          <member value='&quot;04/18/2012&quot;' />
+          <member value='&quot;04/19/2012&quot;' />
+          <member value='&quot;04/20/2012&quot;' />
+          <member value='&quot;04/21/2012&quot;' />
+          <member value='&quot;04/22/2012&quot;' />
+          <member value='&quot;04/23/2012&quot;' />
+          <member value='&quot;04/24/2012&quot;' />
+          <member value='&quot;04/25/2012&quot;' />
+          <member value='&quot;04/26/2012&quot;' />
+          <member value='&quot;04/27/2012&quot;' />
+          <member value='&quot;04/28/2012&quot;' />
+          <member value='&quot;04/29/2012&quot;' />
+          <member value='&quot;04/30/2012&quot;' />
+          <member value='&quot;05/01/2012&quot;' />
+          <member value='&quot;05/02/2012&quot;' />
+          <member value='&quot;05/03/2012&quot;' />
+          <member value='&quot;05/04/2012&quot;' />
+          <member value='&quot;05/05/2012&quot;' />
+          <member value='&quot;05/06/2012&quot;' />
+          <member value='&quot;05/07/2012&quot;' />
+          <member value='&quot;05/08/2012&quot;' />
+          <member value='&quot;05/09/2012&quot;' />
+          <member value='&quot;05/10/2012&quot;' />
+          <member value='&quot;05/11/2012&quot;' />
+          <member value='&quot;05/12/2012&quot;' />
+          <member value='&quot;05/13/2012&quot;' />
+          <member value='&quot;05/14/2012&quot;' />
+          <member value='&quot;05/15/2012&quot;' />
+          <member value='&quot;05/16/2012&quot;' />
+          <member value='&quot;05/17/2012&quot;' />
+          <member value='&quot;05/18/2012&quot;' />
+          <member value='&quot;05/19/2012&quot;' />
+          <member value='&quot;05/20/2012&quot;' />
+          <member value='&quot;05/21/2012&quot;' />
+          <member value='&quot;05/22/2012&quot;' />
+          <member value='&quot;05/23/2012&quot;' />
+          <member value='&quot;05/24/2012&quot;' />
+          <member value='&quot;05/25/2012&quot;' />
+          <member value='&quot;05/26/2012&quot;' />
+          <member value='&quot;05/27/2012&quot;' />
+          <member value='&quot;05/28/2012&quot;' />
+          <member value='&quot;05/29/2012&quot;' />
+          <member value='&quot;05/30/2012&quot;' />
+          <member value='&quot;05/31/2012&quot;' />
+          <member value='&quot;06/01/2012&quot;' />
+          <member value='&quot;06/02/2012&quot;' />
+          <member value='&quot;06/03/2012&quot;' />
+          <member value='&quot;06/04/2012&quot;' />
+          <member value='&quot;06/05/2012&quot;' />
+          <member value='&quot;06/06/2012&quot;' />
+          <member value='&quot;06/07/2012&quot;' />
+          <member value='&quot;06/08/2012&quot;' />
+          <member value='&quot;06/09/2012&quot;' />
+          <member value='&quot;06/10/2012&quot;' />
+          <member value='&quot;06/11/2012&quot;' />
+          <member value='&quot;06/12/2012&quot;' />
+          <member value='&quot;06/13/2012&quot;' />
+          <member value='&quot;06/14/2012&quot;' />
+          <member value='&quot;06/15/2012&quot;' />
+          <member value='&quot;06/16/2012&quot;' />
+          <member value='&quot;06/17/2012&quot;' />
+          <member value='&quot;06/18/2012&quot;' />
+          <member value='&quot;06/19/2012&quot;' />
+          <member value='&quot;06/20/2012&quot;' />
+          <member value='&quot;06/21/2012&quot;' />
+          <member value='&quot;06/22/2012&quot;' />
+          <member value='&quot;06/23/2012&quot;' />
+          <member value='&quot;06/24/2012&quot;' />
+          <member value='&quot;06/25/2012&quot;' />
+          <member value='&quot;06/26/2012&quot;' />
+          <member value='&quot;06/27/2012&quot;' />
+          <member value='&quot;06/28/2012&quot;' />
+          <member value='&quot;06/29/2012&quot;' />
+          <member value='&quot;06/30/2012&quot;' />
+        </members>
+      </column>
+      <column alias='yesterday' caption='end_date_selector' datatype='string' name='[start_date_selector (copy)]' param-domain-type='list' role='measure' type='nominal' value='&quot;yesterday&quot;'>
+        <calculation class='tableau' formula='&quot;yesterday&quot;' />
+        <aliases>
+          <alias key='&quot;yesterday&quot;' value='yesterday' />
+        </aliases>
+        <members>
+          <member alias='yesterday' value='&quot;yesterday&quot;' />
+          <member value='&quot;01/01/2012&quot;' />
+          <member value='&quot;01/02/2012&quot;' />
+          <member value='&quot;01/03/2012&quot;' />
+          <member value='&quot;01/04/2012&quot;' />
+          <member value='&quot;01/05/2012&quot;' />
+          <member value='&quot;01/06/2012&quot;' />
+          <member value='&quot;01/07/2012&quot;' />
+          <member value='&quot;01/08/2012&quot;' />
+          <member value='&quot;01/09/2012&quot;' />
+          <member value='&quot;01/10/2012&quot;' />
+          <member value='&quot;01/11/2012&quot;' />
+          <member value='&quot;01/12/2012&quot;' />
+          <member value='&quot;01/13/2012&quot;' />
+          <member value='&quot;01/14/2012&quot;' />
+          <member value='&quot;01/15/2012&quot;' />
+          <member value='&quot;01/16/2012&quot;' />
+          <member value='&quot;01/17/2012&quot;' />
+          <member value='&quot;01/18/2012&quot;' />
+          <member value='&quot;01/19/2012&quot;' />
+          <member value='&quot;01/20/2012&quot;' />
+          <member value='&quot;01/21/2012&quot;' />
+          <member value='&quot;01/22/2012&quot;' />
+          <member value='&quot;01/23/2012&quot;' />
+          <member value='&quot;01/24/2012&quot;' />
+          <member value='&quot;01/25/2012&quot;' />
+          <member value='&quot;01/26/2012&quot;' />
+          <member value='&quot;01/27/2012&quot;' />
+          <member value='&quot;01/28/2012&quot;' />
+          <member value='&quot;01/29/2012&quot;' />
+          <member value='&quot;01/30/2012&quot;' />
+          <member value='&quot;01/31/2012&quot;' />
+          <member value='&quot;02/01/2012&quot;' />
+          <member value='&quot;02/02/2012&quot;' />
+          <member value='&quot;02/03/2012&quot;' />
+          <member value='&quot;02/04/2012&quot;' />
+          <member value='&quot;02/05/2012&quot;' />
+          <member value='&quot;02/06/2012&quot;' />
+          <member value='&quot;02/07/2012&quot;' />
+          <member value='&quot;02/08/2012&quot;' />
+          <member value='&quot;02/09/2012&quot;' />
+          <member value='&quot;02/10/2012&quot;' />
+          <member value='&quot;02/11/2012&quot;' />
+          <member value='&quot;02/12/2012&quot;' />
+          <member value='&quot;02/13/2012&quot;' />
+          <member value='&quot;02/14/2012&quot;' />
+          <member value='&quot;02/15/2012&quot;' />
+          <member value='&quot;02/16/2012&quot;' />
+          <member value='&quot;02/17/2012&quot;' />
+          <member value='&quot;02/18/2012&quot;' />
+          <member value='&quot;02/19/2012&quot;' />
+          <member value='&quot;02/20/2012&quot;' />
+          <member value='&quot;02/21/2012&quot;' />
+          <member value='&quot;02/22/2012&quot;' />
+          <member value='&quot;02/23/2012&quot;' />
+          <member value='&quot;02/24/2012&quot;' />
+          <member value='&quot;02/25/2012&quot;' />
+          <member value='&quot;02/26/2012&quot;' />
+          <member value='&quot;02/27/2012&quot;' />
+          <member value='&quot;02/28/2012&quot;' />
+          <member value='&quot;02/29/2012&quot;' />
+          <member value='&quot;03/01/2012&quot;' />
+          <member value='&quot;03/02/2012&quot;' />
+          <member value='&quot;03/03/2012&quot;' />
+          <member value='&quot;03/04/2012&quot;' />
+          <member value='&quot;03/05/2012&quot;' />
+          <member value='&quot;03/06/2012&quot;' />
+          <member value='&quot;03/07/2012&quot;' />
+          <member value='&quot;03/08/2012&quot;' />
+          <member value='&quot;03/09/2012&quot;' />
+          <member value='&quot;03/10/2012&quot;' />
+          <member value='&quot;03/11/2012&quot;' />
+          <member value='&quot;03/12/2012&quot;' />
+          <member value='&quot;03/13/2012&quot;' />
+          <member value='&quot;03/14/2012&quot;' />
+          <member value='&quot;03/15/2012&quot;' />
+          <member value='&quot;03/16/2012&quot;' />
+          <member value='&quot;03/17/2012&quot;' />
+          <member value='&quot;03/18/2012&quot;' />
+          <member value='&quot;03/19/2012&quot;' />
+          <member value='&quot;03/20/2012&quot;' />
+          <member value='&quot;03/21/2012&quot;' />
+          <member value='&quot;03/22/2012&quot;' />
+          <member value='&quot;03/23/2012&quot;' />
+          <member value='&quot;03/24/2012&quot;' />
+          <member value='&quot;03/25/2012&quot;' />
+          <member value='&quot;03/26/2012&quot;' />
+          <member value='&quot;03/27/2012&quot;' />
+          <member value='&quot;03/28/2012&quot;' />
+          <member value='&quot;03/29/2012&quot;' />
+          <member value='&quot;03/30/2012&quot;' />
+          <member value='&quot;03/31/2012&quot;' />
+          <member value='&quot;04/01/2012&quot;' />
+          <member value='&quot;04/02/2012&quot;' />
+          <member value='&quot;04/03/2012&quot;' />
+          <member value='&quot;04/04/2012&quot;' />
+          <member value='&quot;04/05/2012&quot;' />
+          <member value='&quot;04/06/2012&quot;' />
+          <member value='&quot;04/07/2012&quot;' />
+          <member value='&quot;04/08/2012&quot;' />
+          <member value='&quot;04/09/2012&quot;' />
+          <member value='&quot;04/10/2012&quot;' />
+          <member value='&quot;04/11/2012&quot;' />
+          <member value='&quot;04/12/2012&quot;' />
+          <member value='&quot;04/13/2012&quot;' />
+          <member value='&quot;04/14/2012&quot;' />
+          <member value='&quot;04/15/2012&quot;' />
+          <member value='&quot;04/16/2012&quot;' />
+          <member value='&quot;04/17/2012&quot;' />
+          <member value='&quot;04/18/2012&quot;' />
+          <member value='&quot;04/19/2012&quot;' />
+          <member value='&quot;04/20/2012&quot;' />
+          <member value='&quot;04/21/2012&quot;' />
+          <member value='&quot;04/22/2012&quot;' />
+          <member value='&quot;04/23/2012&quot;' />
+          <member value='&quot;04/24/2012&quot;' />
+          <member value='&quot;04/25/2012&quot;' />
+          <member value='&quot;04/26/2012&quot;' />
+          <member value='&quot;04/27/2012&quot;' />
+          <member value='&quot;04/28/2012&quot;' />
+          <member value='&quot;04/29/2012&quot;' />
+          <member value='&quot;04/30/2012&quot;' />
+          <member value='&quot;05/01/2012&quot;' />
+          <member value='&quot;05/02/2012&quot;' />
+          <member value='&quot;05/03/2012&quot;' />
+          <member value='&quot;05/04/2012&quot;' />
+          <member value='&quot;05/05/2012&quot;' />
+          <member value='&quot;05/06/2012&quot;' />
+          <member value='&quot;05/07/2012&quot;' />
+          <member value='&quot;05/08/2012&quot;' />
+          <member value='&quot;05/09/2012&quot;' />
+          <member value='&quot;05/10/2012&quot;' />
+          <member value='&quot;05/11/2012&quot;' />
+          <member value='&quot;05/12/2012&quot;' />
+          <member value='&quot;05/13/2012&quot;' />
+          <member value='&quot;05/14/2012&quot;' />
+          <member value='&quot;05/15/2012&quot;' />
+          <member value='&quot;05/16/2012&quot;' />
+          <member value='&quot;05/17/2012&quot;' />
+          <member value='&quot;05/18/2012&quot;' />
+          <member value='&quot;05/19/2012&quot;' />
+          <member value='&quot;05/20/2012&quot;' />
+          <member value='&quot;05/21/2012&quot;' />
+          <member value='&quot;05/22/2012&quot;' />
+          <member value='&quot;05/23/2012&quot;' />
+          <member value='&quot;05/24/2012&quot;' />
+          <member value='&quot;05/25/2012&quot;' />
+          <member value='&quot;05/26/2012&quot;' />
+          <member value='&quot;05/27/2012&quot;' />
+          <member value='&quot;05/28/2012&quot;' />
+          <member value='&quot;05/29/2012&quot;' />
+          <member value='&quot;05/30/2012&quot;' />
+          <member value='&quot;05/31/2012&quot;' />
+          <member value='&quot;06/01/2012&quot;' />
+          <member value='&quot;06/02/2012&quot;' />
+          <member value='&quot;06/03/2012&quot;' />
+          <member value='&quot;06/04/2012&quot;' />
+          <member value='&quot;06/05/2012&quot;' />
+          <member value='&quot;06/06/2012&quot;' />
+          <member value='&quot;06/07/2012&quot;' />
+          <member value='&quot;06/08/2012&quot;' />
+          <member value='&quot;06/09/2012&quot;' />
+          <member value='&quot;06/10/2012&quot;' />
+          <member value='&quot;06/11/2012&quot;' />
+          <member value='&quot;06/12/2012&quot;' />
+          <member value='&quot;06/13/2012&quot;' />
+          <member value='&quot;06/14/2012&quot;' />
+          <member value='&quot;06/15/2012&quot;' />
+          <member value='&quot;06/16/2012&quot;' />
+          <member value='&quot;06/17/2012&quot;' />
+          <member value='&quot;06/18/2012&quot;' />
+          <member value='&quot;06/19/2012&quot;' />
+          <member value='&quot;06/20/2012&quot;' />
+          <member value='&quot;06/21/2012&quot;' />
+          <member value='&quot;06/22/2012&quot;' />
+          <member value='&quot;06/23/2012&quot;' />
+          <member value='&quot;06/24/2012&quot;' />
+          <member value='&quot;06/25/2012&quot;' />
+          <member value='&quot;06/26/2012&quot;' />
+          <member value='&quot;06/27/2012&quot;' />
+          <member value='&quot;06/28/2012&quot;' />
+          <member value='&quot;06/29/2012&quot;' />
+          <member value='&quot;06/30/2012&quot;' />
+        </members>
+      </column>
+    </datasource>
+    <datasource caption='v_wapo_stats (wapodw)' inline='true' name='vertica.41254.589188055557' version='8.0'>
+      <connection class='vertica' dbname='wapodw' one-time-sql='' port='5433' server='ip-10-58-187-100.ec2.internal' username='tableau'>
+        <relation name='v_wapo_stats' table='[public].[v_wapo_stats]' type='table' />
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[vertica.41254.589188055557].[usr:Calculation_7901211143722948:qk]&quot;' value='Daily active users' />
+          <alias key='&quot;[vertica.41254.589188055557].[usr:Calculation_8591211144225304:qk]&quot;' value='Frontpage view per person' />
+        </aliases>
+      </column>
+      <column caption='concat_name_field' datatype='string' name='[Calculation_0051212105019391]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[segment_name_plaintext] + &quot;: &quot; + [segment_key_plaintext]' />
+      </column>
+      <column caption='event_user_counts_view_frontpage' datatype='real' name='[Calculation_0141211152409938]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM(if [name] = &apos;event_user_counts&apos; and [key] = &apos;view_frontpage&apos; then [value] else null end)' />
+      </column>
+      <column caption='frontpage_view' datatype='real' name='[Calculation_1471211141742653]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM(if [name] = &apos;event_counts&apos; and [key] = &apos;view_frontpage&apos; then [value] else null end)' />
+      </column>
+      <column caption='total_frontpage_view' datatype='real' name='[Calculation_3221211151659810]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM(if [name] = &apos;event_counts&apos; and [key] = &apos;view_frontpage&apos; then [value] else null end)' />
+      </column>
+      <column caption='start_date' datatype='datetime' name='[Calculation_7791212111630240]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='if [Parameters].[Parameter 2] = &quot;yesterday&quot; then DATEADD(&quot;day&quot;,-1,TODAY()) &#13;&#10;else Date([Parameters].[Parameter 2]) end' />
+      </column>
+      <column caption='application_active_users' datatype='real' name='[Calculation_7901211143722948]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM(if [name] = &apos;application_active_users&apos; and [period] = &apos;day&apos; then value else null end)' />
+      </column>
+      <column caption='is_valid_date' datatype='boolean' name='[Calculation_8241212112015455]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[run_dt] &lt;= [start_date (copy)] AND [run_dt] &gt;= [Calculation_7791212111630240]' />
+      </column>
+      <column caption='frontpage_view_per_person' datatype='real' name='[Calculation_8591211144225304]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Calculation_1471211141742653]/[Calculation_7901211143722948]' />
+      </column>
+      <column caption='is_end_date' datatype='boolean' name='[Calculation_8671212133151152]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[start_date (copy)] = [run_dt]' />
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='string' hidden='true' name='[category]' role='dimension' type='nominal'>
+      </column>
+      <column datatype='string' hidden='true' name='[description]' role='dimension' type='nominal'>
+      </column>
+      <column datatype='date' hidden='true' name='[end_dt]' role='dimension' type='ordinal'>
+      </column>
+      <column datatype='string' name='[entity_id]' role='dimension' type='nominal'>
+      </column>
+      <column datatype='string' hidden='true' name='[entity_name]' role='dimension' type='nominal'>
+      </column>
+      <column caption='frontpage_view_per_person_rolling' datatype='real' name='[frontpage_view_per_person (copy)]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='window_avg([Calculation_1471211141742653]/[Calculation_7901211143722948],[Parameters].[Parameter 1]*-1,0)'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column datatype='string' hidden='true' name='[full_entity_name]' role='dimension' type='nominal'>
+      </column>
+      <column datatype='string' name='[name]' role='dimension' type='nominal'>
+      </column>
+      <column datatype='string' name='[period]' role='dimension' type='nominal'>
+      </column>
+      <column datatype='string' hidden='true' name='[reportable]' role='dimension' type='nominal'>
+      </column>
+      <column datatype='string' hidden='true' name='[script]' role='dimension' type='nominal'>
+      </column>
+      <column datatype='string' name='[segment_name]' role='dimension' type='nominal'>
+      </column>
+      <column caption='end_date' datatype='datetime' name='[start_date (copy)]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='if [Parameters].[start_date_selector (copy)] = &quot;yesterday&quot; then DATEADD(&quot;day&quot;,-1,TODAY()) &#13;&#10;else Date([Parameters].[start_date_selector (copy)]) end' />
+      </column>
+      <column-instance column='[Calculation_7901211143722948]' derivation='User' name='[usr:Calculation_7901211143722948:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_8591211144225304]' derivation='User' name='[usr:Calculation_8591211144225304:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[frontpage_view_per_person (copy)]' derivation='User' name='[usr:frontpage_view_per_person (copy):qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' />
+      </column-instance>
+      <extract count='-1' enabled='false' units='records'>
+        <connection class='dataengine' dbname='C:\Users\Administrator.IP-0AC611BB\Desktop\Robert_Tableau_exercises\v_wapo_stats (wapodw).tde' schema='Extract' tablename='Extract' update-time='12/12/2012 3:40:14 PM'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <calculations>
+            <calculation column='[Number of Records]' formula='1' />
+          </calculations>
+          <refresh increment-key='' incremental-updates='false'>
+            <refresh-event add-from-file-path='' refresh-type='create' rows-inserted='216800' timestamp-start='2012-12-12 15:40:14.294000' />
+          </refresh>
+        </connection>
+        <filter class='categorical' column='[entity_id]'>
+          <groupfilter function='member' level='[entity_id]' member='&quot;wpsr&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+        </filter>
+        <filter class='categorical' column='[name]'>
+          <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+            <groupfilter function='member' level='[name]' member='&quot;application_active_users&quot;' />
+            <groupfilter function='member' level='[name]' member='&quot;event_counts&quot;' />
+            <groupfilter function='member' level='[name]' member='&quot;event_user_counts&quot;' />
+          </groupfilter>
+        </filter>
+        <filter class='categorical' column='[period]'>
+          <groupfilter function='member' level='[period]' member='&quot;day&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+        </filter>
+        <filter class='categorical' column='[segment_name]'>
+          <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+            <groupfilter function='member' level='[segment_name]' member='&quot;all_users&quot;' />
+            <groupfilter function='member' level='[segment_name]' member='&quot;ip_country&quot;' />
+          </groupfilter>
+        </filter>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.4' show-hidden-fields='true' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#1f77b4'>
+              <bucket>&quot;[vertica.41254.589188055557]&quot;</bucket>
+            </map>
+            <map to='#1f77b4'>
+              <bucket>&quot;[vertica.41254.589188055557].[usr:Calculation_8591211144225304:qk]&quot;</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>&quot;[vertica.41254.589188055557].[usr:Calculation_4261211151853130:qk]&quot;</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>&quot;[vertica.41254.589188055557].[usr:frontpage_view_per_person (copy):qk]:1&quot;</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>&quot;[Parameters].[Parameter 1]&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;[vertica.41254.589188055557].[usr:Calculation_8591211144225304:qk]:1&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;[vertica.41254.589188055557].[usr:frontpage_view_per_person (copy):qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='smoothing_window' datatype='integer' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='10'>
+          <calculation class='tableau' formula='10' />
+          <range max='20' min='1' />
+        </column>
+        <column caption='start_date_selector' datatype='string' name='[Parameter 2]' param-domain-type='list' role='measure' type='nominal' value='&quot;01/16/2012&quot;'>
+          <calculation class='tableau' formula='&quot;01/16/2012&quot;' />
+          <aliases>
+            <alias key='&quot;yesterday&quot;' value='yesterday' />
+          </aliases>
+          <members>
+            <member alias='yesterday' value='&quot;yesterday&quot;' />
+            <member value='&quot;01/01/2012&quot;' />
+            <member value='&quot;01/02/2012&quot;' />
+            <member value='&quot;01/03/2012&quot;' />
+            <member value='&quot;01/04/2012&quot;' />
+            <member value='&quot;01/05/2012&quot;' />
+            <member value='&quot;01/06/2012&quot;' />
+            <member value='&quot;01/07/2012&quot;' />
+            <member value='&quot;01/08/2012&quot;' />
+            <member value='&quot;01/09/2012&quot;' />
+            <member value='&quot;01/10/2012&quot;' />
+            <member value='&quot;01/11/2012&quot;' />
+            <member value='&quot;01/12/2012&quot;' />
+            <member value='&quot;01/13/2012&quot;' />
+            <member value='&quot;01/14/2012&quot;' />
+            <member value='&quot;01/15/2012&quot;' />
+            <member value='&quot;01/16/2012&quot;' />
+            <member value='&quot;01/17/2012&quot;' />
+            <member value='&quot;01/18/2012&quot;' />
+            <member value='&quot;01/19/2012&quot;' />
+            <member value='&quot;01/20/2012&quot;' />
+            <member value='&quot;01/21/2012&quot;' />
+            <member value='&quot;01/22/2012&quot;' />
+            <member value='&quot;01/23/2012&quot;' />
+            <member value='&quot;01/24/2012&quot;' />
+            <member value='&quot;01/25/2012&quot;' />
+            <member value='&quot;01/26/2012&quot;' />
+            <member value='&quot;01/27/2012&quot;' />
+            <member value='&quot;01/28/2012&quot;' />
+            <member value='&quot;01/29/2012&quot;' />
+            <member value='&quot;01/30/2012&quot;' />
+            <member value='&quot;01/31/2012&quot;' />
+            <member value='&quot;02/01/2012&quot;' />
+            <member value='&quot;02/02/2012&quot;' />
+            <member value='&quot;02/03/2012&quot;' />
+            <member value='&quot;02/04/2012&quot;' />
+            <member value='&quot;02/05/2012&quot;' />
+            <member value='&quot;02/06/2012&quot;' />
+            <member value='&quot;02/07/2012&quot;' />
+            <member value='&quot;02/08/2012&quot;' />
+            <member value='&quot;02/09/2012&quot;' />
+            <member value='&quot;02/10/2012&quot;' />
+            <member value='&quot;02/11/2012&quot;' />
+            <member value='&quot;02/12/2012&quot;' />
+            <member value='&quot;02/13/2012&quot;' />
+            <member value='&quot;02/14/2012&quot;' />
+            <member value='&quot;02/15/2012&quot;' />
+            <member value='&quot;02/16/2012&quot;' />
+            <member value='&quot;02/17/2012&quot;' />
+            <member value='&quot;02/18/2012&quot;' />
+            <member value='&quot;02/19/2012&quot;' />
+            <member value='&quot;02/20/2012&quot;' />
+            <member value='&quot;02/21/2012&quot;' />
+            <member value='&quot;02/22/2012&quot;' />
+            <member value='&quot;02/23/2012&quot;' />
+            <member value='&quot;02/24/2012&quot;' />
+            <member value='&quot;02/25/2012&quot;' />
+            <member value='&quot;02/26/2012&quot;' />
+            <member value='&quot;02/27/2012&quot;' />
+            <member value='&quot;02/28/2012&quot;' />
+            <member value='&quot;02/29/2012&quot;' />
+            <member value='&quot;03/01/2012&quot;' />
+            <member value='&quot;03/02/2012&quot;' />
+            <member value='&quot;03/03/2012&quot;' />
+            <member value='&quot;03/04/2012&quot;' />
+            <member value='&quot;03/05/2012&quot;' />
+            <member value='&quot;03/06/2012&quot;' />
+            <member value='&quot;03/07/2012&quot;' />
+            <member value='&quot;03/08/2012&quot;' />
+            <member value='&quot;03/09/2012&quot;' />
+            <member value='&quot;03/10/2012&quot;' />
+            <member value='&quot;03/11/2012&quot;' />
+            <member value='&quot;03/12/2012&quot;' />
+            <member value='&quot;03/13/2012&quot;' />
+            <member value='&quot;03/14/2012&quot;' />
+            <member value='&quot;03/15/2012&quot;' />
+            <member value='&quot;03/16/2012&quot;' />
+            <member value='&quot;03/17/2012&quot;' />
+            <member value='&quot;03/18/2012&quot;' />
+            <member value='&quot;03/19/2012&quot;' />
+            <member value='&quot;03/20/2012&quot;' />
+            <member value='&quot;03/21/2012&quot;' />
+            <member value='&quot;03/22/2012&quot;' />
+            <member value='&quot;03/23/2012&quot;' />
+            <member value='&quot;03/24/2012&quot;' />
+            <member value='&quot;03/25/2012&quot;' />
+            <member value='&quot;03/26/2012&quot;' />
+            <member value='&quot;03/27/2012&quot;' />
+            <member value='&quot;03/28/2012&quot;' />
+            <member value='&quot;03/29/2012&quot;' />
+            <member value='&quot;03/30/2012&quot;' />
+            <member value='&quot;03/31/2012&quot;' />
+            <member value='&quot;04/01/2012&quot;' />
+            <member value='&quot;04/02/2012&quot;' />
+            <member value='&quot;04/03/2012&quot;' />
+            <member value='&quot;04/04/2012&quot;' />
+            <member value='&quot;04/05/2012&quot;' />
+            <member value='&quot;04/06/2012&quot;' />
+            <member value='&quot;04/07/2012&quot;' />
+            <member value='&quot;04/08/2012&quot;' />
+            <member value='&quot;04/09/2012&quot;' />
+            <member value='&quot;04/10/2012&quot;' />
+            <member value='&quot;04/11/2012&quot;' />
+            <member value='&quot;04/12/2012&quot;' />
+            <member value='&quot;04/13/2012&quot;' />
+            <member value='&quot;04/14/2012&quot;' />
+            <member value='&quot;04/15/2012&quot;' />
+            <member value='&quot;04/16/2012&quot;' />
+            <member value='&quot;04/17/2012&quot;' />
+            <member value='&quot;04/18/2012&quot;' />
+            <member value='&quot;04/19/2012&quot;' />
+            <member value='&quot;04/20/2012&quot;' />
+            <member value='&quot;04/21/2012&quot;' />
+            <member value='&quot;04/22/2012&quot;' />
+            <member value='&quot;04/23/2012&quot;' />
+            <member value='&quot;04/24/2012&quot;' />
+            <member value='&quot;04/25/2012&quot;' />
+            <member value='&quot;04/26/2012&quot;' />
+            <member value='&quot;04/27/2012&quot;' />
+            <member value='&quot;04/28/2012&quot;' />
+            <member value='&quot;04/29/2012&quot;' />
+            <member value='&quot;04/30/2012&quot;' />
+            <member value='&quot;05/01/2012&quot;' />
+            <member value='&quot;05/02/2012&quot;' />
+            <member value='&quot;05/03/2012&quot;' />
+            <member value='&quot;05/04/2012&quot;' />
+            <member value='&quot;05/05/2012&quot;' />
+            <member value='&quot;05/06/2012&quot;' />
+            <member value='&quot;05/07/2012&quot;' />
+            <member value='&quot;05/08/2012&quot;' />
+            <member value='&quot;05/09/2012&quot;' />
+            <member value='&quot;05/10/2012&quot;' />
+            <member value='&quot;05/11/2012&quot;' />
+            <member value='&quot;05/12/2012&quot;' />
+            <member value='&quot;05/13/2012&quot;' />
+            <member value='&quot;05/14/2012&quot;' />
+            <member value='&quot;05/15/2012&quot;' />
+            <member value='&quot;05/16/2012&quot;' />
+            <member value='&quot;05/17/2012&quot;' />
+            <member value='&quot;05/18/2012&quot;' />
+            <member value='&quot;05/19/2012&quot;' />
+            <member value='&quot;05/20/2012&quot;' />
+            <member value='&quot;05/21/2012&quot;' />
+            <member value='&quot;05/22/2012&quot;' />
+            <member value='&quot;05/23/2012&quot;' />
+            <member value='&quot;05/24/2012&quot;' />
+            <member value='&quot;05/25/2012&quot;' />
+            <member value='&quot;05/26/2012&quot;' />
+            <member value='&quot;05/27/2012&quot;' />
+            <member value='&quot;05/28/2012&quot;' />
+            <member value='&quot;05/29/2012&quot;' />
+            <member value='&quot;05/30/2012&quot;' />
+            <member value='&quot;05/31/2012&quot;' />
+            <member value='&quot;06/01/2012&quot;' />
+            <member value='&quot;06/02/2012&quot;' />
+            <member value='&quot;06/03/2012&quot;' />
+            <member value='&quot;06/04/2012&quot;' />
+            <member value='&quot;06/05/2012&quot;' />
+            <member value='&quot;06/06/2012&quot;' />
+            <member value='&quot;06/07/2012&quot;' />
+            <member value='&quot;06/08/2012&quot;' />
+            <member value='&quot;06/09/2012&quot;' />
+            <member value='&quot;06/10/2012&quot;' />
+            <member value='&quot;06/11/2012&quot;' />
+            <member value='&quot;06/12/2012&quot;' />
+            <member value='&quot;06/13/2012&quot;' />
+            <member value='&quot;06/14/2012&quot;' />
+            <member value='&quot;06/15/2012&quot;' />
+            <member value='&quot;06/16/2012&quot;' />
+            <member value='&quot;06/17/2012&quot;' />
+            <member value='&quot;06/18/2012&quot;' />
+            <member value='&quot;06/19/2012&quot;' />
+            <member value='&quot;06/20/2012&quot;' />
+            <member value='&quot;06/21/2012&quot;' />
+            <member value='&quot;06/22/2012&quot;' />
+            <member value='&quot;06/23/2012&quot;' />
+            <member value='&quot;06/24/2012&quot;' />
+            <member value='&quot;06/25/2012&quot;' />
+            <member value='&quot;06/26/2012&quot;' />
+            <member value='&quot;06/27/2012&quot;' />
+            <member value='&quot;06/28/2012&quot;' />
+            <member value='&quot;06/29/2012&quot;' />
+            <member value='&quot;06/30/2012&quot;' />
+          </members>
+        </column>
+        <column alias='yesterday' caption='end_date_selector' datatype='string' name='[start_date_selector (copy)]' param-domain-type='list' role='measure' type='nominal' value='&quot;yesterday&quot;'>
+          <calculation class='tableau' formula='&quot;yesterday&quot;' />
+          <aliases>
+            <alias key='&quot;yesterday&quot;' value='yesterday' />
+          </aliases>
+          <members>
+            <member alias='yesterday' value='&quot;yesterday&quot;' />
+            <member value='&quot;01/01/2012&quot;' />
+            <member value='&quot;01/02/2012&quot;' />
+            <member value='&quot;01/03/2012&quot;' />
+            <member value='&quot;01/04/2012&quot;' />
+            <member value='&quot;01/05/2012&quot;' />
+            <member value='&quot;01/06/2012&quot;' />
+            <member value='&quot;01/07/2012&quot;' />
+            <member value='&quot;01/08/2012&quot;' />
+            <member value='&quot;01/09/2012&quot;' />
+            <member value='&quot;01/10/2012&quot;' />
+            <member value='&quot;01/11/2012&quot;' />
+            <member value='&quot;01/12/2012&quot;' />
+            <member value='&quot;01/13/2012&quot;' />
+            <member value='&quot;01/14/2012&quot;' />
+            <member value='&quot;01/15/2012&quot;' />
+            <member value='&quot;01/16/2012&quot;' />
+            <member value='&quot;01/17/2012&quot;' />
+            <member value='&quot;01/18/2012&quot;' />
+            <member value='&quot;01/19/2012&quot;' />
+            <member value='&quot;01/20/2012&quot;' />
+            <member value='&quot;01/21/2012&quot;' />
+            <member value='&quot;01/22/2012&quot;' />
+            <member value='&quot;01/23/2012&quot;' />
+            <member value='&quot;01/24/2012&quot;' />
+            <member value='&quot;01/25/2012&quot;' />
+            <member value='&quot;01/26/2012&quot;' />
+            <member value='&quot;01/27/2012&quot;' />
+            <member value='&quot;01/28/2012&quot;' />
+            <member value='&quot;01/29/2012&quot;' />
+            <member value='&quot;01/30/2012&quot;' />
+            <member value='&quot;01/31/2012&quot;' />
+            <member value='&quot;02/01/2012&quot;' />
+            <member value='&quot;02/02/2012&quot;' />
+            <member value='&quot;02/03/2012&quot;' />
+            <member value='&quot;02/04/2012&quot;' />
+            <member value='&quot;02/05/2012&quot;' />
+            <member value='&quot;02/06/2012&quot;' />
+            <member value='&quot;02/07/2012&quot;' />
+            <member value='&quot;02/08/2012&quot;' />
+            <member value='&quot;02/09/2012&quot;' />
+            <member value='&quot;02/10/2012&quot;' />
+            <member value='&quot;02/11/2012&quot;' />
+            <member value='&quot;02/12/2012&quot;' />
+            <member value='&quot;02/13/2012&quot;' />
+            <member value='&quot;02/14/2012&quot;' />
+            <member value='&quot;02/15/2012&quot;' />
+            <member value='&quot;02/16/2012&quot;' />
+            <member value='&quot;02/17/2012&quot;' />
+            <member value='&quot;02/18/2012&quot;' />
+            <member value='&quot;02/19/2012&quot;' />
+            <member value='&quot;02/20/2012&quot;' />
+            <member value='&quot;02/21/2012&quot;' />
+            <member value='&quot;02/22/2012&quot;' />
+            <member value='&quot;02/23/2012&quot;' />
+            <member value='&quot;02/24/2012&quot;' />
+            <member value='&quot;02/25/2012&quot;' />
+            <member value='&quot;02/26/2012&quot;' />
+            <member value='&quot;02/27/2012&quot;' />
+            <member value='&quot;02/28/2012&quot;' />
+            <member value='&quot;02/29/2012&quot;' />
+            <member value='&quot;03/01/2012&quot;' />
+            <member value='&quot;03/02/2012&quot;' />
+            <member value='&quot;03/03/2012&quot;' />
+            <member value='&quot;03/04/2012&quot;' />
+            <member value='&quot;03/05/2012&quot;' />
+            <member value='&quot;03/06/2012&quot;' />
+            <member value='&quot;03/07/2012&quot;' />
+            <member value='&quot;03/08/2012&quot;' />
+            <member value='&quot;03/09/2012&quot;' />
+            <member value='&quot;03/10/2012&quot;' />
+            <member value='&quot;03/11/2012&quot;' />
+            <member value='&quot;03/12/2012&quot;' />
+            <member value='&quot;03/13/2012&quot;' />
+            <member value='&quot;03/14/2012&quot;' />
+            <member value='&quot;03/15/2012&quot;' />
+            <member value='&quot;03/16/2012&quot;' />
+            <member value='&quot;03/17/2012&quot;' />
+            <member value='&quot;03/18/2012&quot;' />
+            <member value='&quot;03/19/2012&quot;' />
+            <member value='&quot;03/20/2012&quot;' />
+            <member value='&quot;03/21/2012&quot;' />
+            <member value='&quot;03/22/2012&quot;' />
+            <member value='&quot;03/23/2012&quot;' />
+            <member value='&quot;03/24/2012&quot;' />
+            <member value='&quot;03/25/2012&quot;' />
+            <member value='&quot;03/26/2012&quot;' />
+            <member value='&quot;03/27/2012&quot;' />
+            <member value='&quot;03/28/2012&quot;' />
+            <member value='&quot;03/29/2012&quot;' />
+            <member value='&quot;03/30/2012&quot;' />
+            <member value='&quot;03/31/2012&quot;' />
+            <member value='&quot;04/01/2012&quot;' />
+            <member value='&quot;04/02/2012&quot;' />
+            <member value='&quot;04/03/2012&quot;' />
+            <member value='&quot;04/04/2012&quot;' />
+            <member value='&quot;04/05/2012&quot;' />
+            <member value='&quot;04/06/2012&quot;' />
+            <member value='&quot;04/07/2012&quot;' />
+            <member value='&quot;04/08/2012&quot;' />
+            <member value='&quot;04/09/2012&quot;' />
+            <member value='&quot;04/10/2012&quot;' />
+            <member value='&quot;04/11/2012&quot;' />
+            <member value='&quot;04/12/2012&quot;' />
+            <member value='&quot;04/13/2012&quot;' />
+            <member value='&quot;04/14/2012&quot;' />
+            <member value='&quot;04/15/2012&quot;' />
+            <member value='&quot;04/16/2012&quot;' />
+            <member value='&quot;04/17/2012&quot;' />
+            <member value='&quot;04/18/2012&quot;' />
+            <member value='&quot;04/19/2012&quot;' />
+            <member value='&quot;04/20/2012&quot;' />
+            <member value='&quot;04/21/2012&quot;' />
+            <member value='&quot;04/22/2012&quot;' />
+            <member value='&quot;04/23/2012&quot;' />
+            <member value='&quot;04/24/2012&quot;' />
+            <member value='&quot;04/25/2012&quot;' />
+            <member value='&quot;04/26/2012&quot;' />
+            <member value='&quot;04/27/2012&quot;' />
+            <member value='&quot;04/28/2012&quot;' />
+            <member value='&quot;04/29/2012&quot;' />
+            <member value='&quot;04/30/2012&quot;' />
+            <member value='&quot;05/01/2012&quot;' />
+            <member value='&quot;05/02/2012&quot;' />
+            <member value='&quot;05/03/2012&quot;' />
+            <member value='&quot;05/04/2012&quot;' />
+            <member value='&quot;05/05/2012&quot;' />
+            <member value='&quot;05/06/2012&quot;' />
+            <member value='&quot;05/07/2012&quot;' />
+            <member value='&quot;05/08/2012&quot;' />
+            <member value='&quot;05/09/2012&quot;' />
+            <member value='&quot;05/10/2012&quot;' />
+            <member value='&quot;05/11/2012&quot;' />
+            <member value='&quot;05/12/2012&quot;' />
+            <member value='&quot;05/13/2012&quot;' />
+            <member value='&quot;05/14/2012&quot;' />
+            <member value='&quot;05/15/2012&quot;' />
+            <member value='&quot;05/16/2012&quot;' />
+            <member value='&quot;05/17/2012&quot;' />
+            <member value='&quot;05/18/2012&quot;' />
+            <member value='&quot;05/19/2012&quot;' />
+            <member value='&quot;05/20/2012&quot;' />
+            <member value='&quot;05/21/2012&quot;' />
+            <member value='&quot;05/22/2012&quot;' />
+            <member value='&quot;05/23/2012&quot;' />
+            <member value='&quot;05/24/2012&quot;' />
+            <member value='&quot;05/25/2012&quot;' />
+            <member value='&quot;05/26/2012&quot;' />
+            <member value='&quot;05/27/2012&quot;' />
+            <member value='&quot;05/28/2012&quot;' />
+            <member value='&quot;05/29/2012&quot;' />
+            <member value='&quot;05/30/2012&quot;' />
+            <member value='&quot;05/31/2012&quot;' />
+            <member value='&quot;06/01/2012&quot;' />
+            <member value='&quot;06/02/2012&quot;' />
+            <member value='&quot;06/03/2012&quot;' />
+            <member value='&quot;06/04/2012&quot;' />
+            <member value='&quot;06/05/2012&quot;' />
+            <member value='&quot;06/06/2012&quot;' />
+            <member value='&quot;06/07/2012&quot;' />
+            <member value='&quot;06/08/2012&quot;' />
+            <member value='&quot;06/09/2012&quot;' />
+            <member value='&quot;06/10/2012&quot;' />
+            <member value='&quot;06/11/2012&quot;' />
+            <member value='&quot;06/12/2012&quot;' />
+            <member value='&quot;06/13/2012&quot;' />
+            <member value='&quot;06/14/2012&quot;' />
+            <member value='&quot;06/15/2012&quot;' />
+            <member value='&quot;06/16/2012&quot;' />
+            <member value='&quot;06/17/2012&quot;' />
+            <member value='&quot;06/18/2012&quot;' />
+            <member value='&quot;06/19/2012&quot;' />
+            <member value='&quot;06/20/2012&quot;' />
+            <member value='&quot;06/21/2012&quot;' />
+            <member value='&quot;06/22/2012&quot;' />
+            <member value='&quot;06/23/2012&quot;' />
+            <member value='&quot;06/24/2012&quot;' />
+            <member value='&quot;06/25/2012&quot;' />
+            <member value='&quot;06/26/2012&quot;' />
+            <member value='&quot;06/27/2012&quot;' />
+            <member value='&quot;06/28/2012&quot;' />
+            <member value='&quot;06/29/2012&quot;' />
+            <member value='&quot;06/30/2012&quot;' />
+          </members>
+        </column>
+      </datasource-dependencies>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='vertica.41254.589188055557'>
+      <datasources>
+        <datasource caption='v_wapo_stats (wapodw)' name='vertica.41254.589188055557' />
+      </datasources>
+      <datasource-dependencies datasource='vertica.41254.589188055557'>
+        <column caption='concat_name_field' datatype='string' name='[Calculation_0051212105019391]' role='dimension' type='nominal'>
+          <calculation class='tableau' formula='[segment_name_plaintext] + &quot;: &quot; + [segment_key_plaintext]' />
+        </column>
+        <column datatype='string' name='[entity_id]' role='dimension' type='nominal'>
+        </column>
+        <column-instance column='[Calculation_0051212105019391]' derivation='None' name='[none:Calculation_0051212105019391:nk]' pivot='key' type='nominal' />
+        <column-instance column='[entity_id]' derivation='None' name='[none:entity_id:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[vertica.41254.589188055557].[none:Calculation_0051212105019391:nk]'>
+        <groupfilter function='member' level='[none:Calculation_0051212105019391:nk]' member='&quot;Country (IP Address): Ireland&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[vertica.41254.589188055557].[none:entity_id:nk]'>
+        <groupfilter function='member' level='[none:entity_id:nk]' member='&quot;wpsr&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='frontapge_view_per_person_rolling'>
+      <layout-options>
+        <caption>
+          <formatted-text>
+            <run>This is a line graph for </run>
+            <run bold='true'>&lt;[vertica.41254.589188055557].[none:Calculation_0051212105019391:nk]&gt;  </run>
+            <run>smooth over </run>
+            <run bold='true'>&lt;[Parameters].[Parameter 1]&gt; </run>
+            <run>days</run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='v_wapo_stats (wapodw)' name='vertica.41254.589188055557' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='vertica.41254.589188055557'>
+            <column caption='concat_name_field' datatype='string' name='[Calculation_0051212105019391]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[segment_name_plaintext] + &quot;: &quot; + [segment_key_plaintext]' />
+            </column>
+            <column caption='event_user_counts_view_frontpage' datatype='real' name='[Calculation_0141211152409938]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(if [name] = &apos;event_user_counts&apos; and [key] = &apos;view_frontpage&apos; then [value] else null end)' />
+            </column>
+            <column caption='frontpage_view' datatype='real' name='[Calculation_1471211141742653]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(if [name] = &apos;event_counts&apos; and [key] = &apos;view_frontpage&apos; then [value] else null end)' />
+            </column>
+            <column caption='total_frontpage_view' datatype='real' name='[Calculation_3221211151659810]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(if [name] = &apos;event_counts&apos; and [key] = &apos;view_frontpage&apos; then [value] else null end)' />
+            </column>
+            <column caption='application_active_users' datatype='real' name='[Calculation_7901211143722948]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(if [name] = &apos;application_active_users&apos; and [period] = &apos;day&apos; then value else null end)' />
+            </column>
+            <column caption='is_valid_date' datatype='boolean' name='[Calculation_8241212112015455]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[run_dt] &lt;= [start_date (copy)] AND [run_dt] &gt;= [Calculation_7791212111630240]' />
+            </column>
+            <column caption='frontpage_view_per_person' datatype='real' name='[Calculation_8591211144225304]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation_1471211141742653]/[Calculation_7901211143722948]' />
+            </column>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column datatype='string' name='[entity_id]' role='dimension' type='nominal'>
+            </column>
+            <column caption='frontpage_view_per_person_rolling' datatype='real' name='[frontpage_view_per_person (copy)]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='window_avg([Calculation_1471211141742653]/[Calculation_7901211143722948],[Parameters].[Parameter 1]*-1,0)'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column datatype='integer' name='[level_id]' role='measure' type='quantitative'>
+            </column>
+            <column-instance column='[Calculation_0051212105019391]' derivation='None' name='[none:Calculation_0051212105019391:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_8241212112015455]' derivation='None' name='[none:Calculation_8241212112015455:nk]' pivot='key' type='nominal' />
+            <column-instance column='[entity_id]' derivation='None' name='[none:entity_id:nk]' pivot='key' type='nominal' />
+            <column datatype='date' name='[run_dt]' role='dimension' type='ordinal'>
+            </column>
+            <column datatype='integer' name='[segment_id]' role='measure' type='quantitative'>
+            </column>
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[level_id]' derivation='Sum' name='[sum:level_id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[segment_id]' derivation='Sum' name='[sum:segment_id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[value]' derivation='Sum' name='[sum:value:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[run_dt]' derivation='Day-Trunc' name='[tdy:run_dt:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_0141211152409938]' derivation='User' name='[usr:Calculation_0141211152409938:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1471211141742653]' derivation='User' name='[usr:Calculation_1471211141742653:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_3221211151659810]' derivation='User' name='[usr:Calculation_3221211151659810:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_7901211143722948]' derivation='User' name='[usr:Calculation_7901211143722948:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_8591211144225304]' derivation='User' name='[usr:Calculation_8591211144225304:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[frontpage_view_per_person (copy)]' derivation='User' name='[usr:frontpage_view_per_person (copy):qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' />
+            </column-instance>
+            <column datatype='real' name='[value]' role='measure' type='quantitative'>
+            </column>
+          </datasource-dependencies>
+          <filter class='categorical' column='[vertica.41254.589188055557].[:Measure Names]'>
+            <groupfilter function='level-members' level='[:Measure Names]' />
+          </filter>
+          <filter class='categorical' column='[vertica.41254.589188055557].[none:Calculation_8241212112015455:nk]'>
+            <groupfilter function='member' level='[none:Calculation_8241212112015455:nk]' member='true' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[vertica.41254.589188055557].[none:entity_id:nk]</column>
+            <column>[vertica.41254.589188055557].[:Measure Names]</column>
+            <column>[vertica.41254.589188055557].[none:Calculation_0051212105019391:nk]</column>
+            <column>[vertica.41254.589188055557].[none:Calculation_8241212112015455:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='subtitle' class='0' field='[vertica.41254.589188055557].[tdy:run_dt:qk]' scope='cols' value='' />
+            <format attr='auto-subtitle' class='0' field='[vertica.41254.589188055557].[tdy:run_dt:qk]' scope='cols' value='true' />
+            <format attr='width' field='[vertica.41254.589188055557].[usr:frontpage_view_per_person (copy):qk]' value='52' />
+            <format attr='subtitle' class='1' field='[vertica.41254.589188055557].[usr:frontpage_view_per_person (copy):qk]' scope='rows' value='' />
+            <format attr='auto-subtitle' class='1' field='[vertica.41254.589188055557].[usr:frontpage_view_per_person (copy):qk]' scope='rows' value='true' />
+            <encoding attr='space' class='1' field='[vertica.41254.589188055557].[usr:frontpage_view_per_person (copy):qk]' field-type='quantitative' fold='true' scope='rows' synchronized='true' type='space' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text'>
+            </mark>
+            <mark class='Icon'>
+            </mark>
+            <mark class='Shape'>
+            </mark>
+            <mark class='Square'>
+            </mark>
+            <mark class='Circle'>
+            </mark>
+            <mark class='Bar'>
+            </mark>
+            <mark class='GanttBar'>
+            </mark>
+            <mark class='Line'>
+            </mark>
+            <mark class='Automatic'>
+              <color column='[vertica.41254.589188055557].[:Measure Names]' />
+            </mark>
+            <reference-line axis-column='[vertica.41254.589188055557].[usr:frontpage_view_per_person (copy):qk]' formula='average' id='refline0' label-type='automatic' scope='per-pane' value-column='[vertica.41254.589188055557].[usr:frontpage_view_per_person (copy):qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.78032255172729492' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([vertica.41254.589188055557].[usr:frontpage_view_per_person (copy):qk] + [vertica.41254.589188055557].[usr:frontpage_view_per_person (copy):qk])</rows>
+        <cols>[vertica.41254.589188055557].[tdy:run_dt:qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='frontpage_view_per_person'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='v_wapo_stats (wapodw)' name='vertica.41254.589188055557' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='vertica.41254.589188055557'>
+            <column caption='concat_name_field' datatype='string' name='[Calculation_0051212105019391]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[segment_name_plaintext] + &quot;: &quot; + [segment_key_plaintext]' />
+            </column>
+            <column caption='event_user_counts_view_frontpage' datatype='real' name='[Calculation_0141211152409938]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(if [name] = &apos;event_user_counts&apos; and [key] = &apos;view_frontpage&apos; then [value] else null end)' />
+            </column>
+            <column caption='frontpage_view' datatype='real' name='[Calculation_1471211141742653]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(if [name] = &apos;event_counts&apos; and [key] = &apos;view_frontpage&apos; then [value] else null end)' />
+            </column>
+            <column caption='total_frontpage_view' datatype='real' name='[Calculation_3221211151659810]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(if [name] = &apos;event_counts&apos; and [key] = &apos;view_frontpage&apos; then [value] else null end)' />
+            </column>
+            <column caption='application_active_users' datatype='real' name='[Calculation_7901211143722948]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(if [name] = &apos;application_active_users&apos; and [period] = &apos;day&apos; then value else null end)' />
+            </column>
+            <column caption='is_valid_date' datatype='boolean' name='[Calculation_8241212112015455]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[run_dt] &lt;= [start_date (copy)] AND [run_dt] &gt;= [Calculation_7791212111630240]' />
+            </column>
+            <column caption='frontpage_view_per_person' datatype='real' name='[Calculation_8591211144225304]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation_1471211141742653]/[Calculation_7901211143722948]' />
+            </column>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column datatype='string' name='[entity_id]' role='dimension' type='nominal'>
+            </column>
+            <column caption='frontpage_view_per_person_rolling' datatype='real' name='[frontpage_view_per_person (copy)]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='window_avg([Calculation_1471211141742653]/[Calculation_7901211143722948],[Parameters].[Parameter 1]*-1,0)'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column datatype='integer' name='[level_id]' role='measure' type='quantitative'>
+            </column>
+            <column-instance column='[Calculation_0051212105019391]' derivation='None' name='[none:Calculation_0051212105019391:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_8241212112015455]' derivation='None' name='[none:Calculation_8241212112015455:nk]' pivot='key' type='nominal' />
+            <column-instance column='[entity_id]' derivation='None' name='[none:entity_id:nk]' pivot='key' type='nominal' />
+            <column datatype='date' name='[run_dt]' role='dimension' type='ordinal'>
+            </column>
+            <column datatype='integer' name='[segment_id]' role='measure' type='quantitative'>
+            </column>
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[level_id]' derivation='Sum' name='[sum:level_id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[segment_id]' derivation='Sum' name='[sum:segment_id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[value]' derivation='Sum' name='[sum:value:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[run_dt]' derivation='Day-Trunc' name='[tdy:run_dt:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_0141211152409938]' derivation='User' name='[usr:Calculation_0141211152409938:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1471211141742653]' derivation='User' name='[usr:Calculation_1471211141742653:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_3221211151659810]' derivation='User' name='[usr:Calculation_3221211151659810:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_7901211143722948]' derivation='User' name='[usr:Calculation_7901211143722948:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_8591211144225304]' derivation='User' name='[usr:Calculation_8591211144225304:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[frontpage_view_per_person (copy)]' derivation='User' name='[usr:frontpage_view_per_person (copy):qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' />
+            </column-instance>
+            <column datatype='real' name='[value]' role='measure' type='quantitative'>
+            </column>
+          </datasource-dependencies>
+          <filter class='categorical' column='[vertica.41254.589188055557].[:Measure Names]'>
+            <groupfilter function='level-members' level='[:Measure Names]' />
+          </filter>
+          <filter class='categorical' column='[vertica.41254.589188055557].[none:Calculation_8241212112015455:nk]'>
+            <groupfilter function='member' level='[none:Calculation_8241212112015455:nk]' member='true' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[vertica.41254.589188055557].[none:entity_id:nk]</column>
+            <column>[vertica.41254.589188055557].[:Measure Names]</column>
+            <column>[vertica.41254.589188055557].[none:Calculation_0051212105019391:nk]</column>
+            <column>[vertica.41254.589188055557].[none:Calculation_8241212112015455:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='subtitle' class='0' field='[vertica.41254.589188055557].[tdy:run_dt:qk]' scope='cols' value='' />
+            <format attr='auto-subtitle' class='0' field='[vertica.41254.589188055557].[tdy:run_dt:qk]' scope='cols' value='true' />
+            <format attr='width' field='[vertica.41254.589188055557].[usr:frontpage_view_per_person (copy):qk]' value='52' />
+            <format attr='subtitle' class='1' field='[vertica.41254.589188055557].[usr:Calculation_8591211144225304:qk]' scope='rows' value='' />
+            <format attr='auto-subtitle' class='1' field='[vertica.41254.589188055557].[usr:Calculation_8591211144225304:qk]' scope='rows' value='true' />
+            <encoding attr='space' class='1' field='[vertica.41254.589188055557].[usr:Calculation_8591211144225304:qk]' field-type='quantitative' fold='true' scope='rows' synchronized='true' type='space' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text'>
+            </mark>
+            <mark class='Icon'>
+            </mark>
+            <mark class='Shape'>
+            </mark>
+            <mark class='Square'>
+            </mark>
+            <mark class='Circle'>
+            </mark>
+            <mark class='Bar'>
+            </mark>
+            <mark class='GanttBar'>
+            </mark>
+            <mark class='Line'>
+            </mark>
+            <mark class='Automatic'>
+              <color column='[vertica.41254.589188055557].[:Measure Names]' />
+            </mark>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.78032255172729492' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([vertica.41254.589188055557].[usr:Calculation_8591211144225304:qk] + [vertica.41254.589188055557].[usr:Calculation_8591211144225304:qk])</rows>
+        <cols>[vertica.41254.589188055557].[tdy:run_dt:qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='summary_yesterday'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='16'>&lt;</run>
+            <run bold='true' fontsize='16'>Sheet Name</run>
+            <run bold='true' fontsize='16'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='v_wapo_stats (wapodw)' name='vertica.41254.589188055557' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='vertica.41254.589188055557'>
+            <column caption='concat_name_field' datatype='string' name='[Calculation_0051212105019391]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[segment_name_plaintext] + &quot;: &quot; + [segment_key_plaintext]' />
+            </column>
+            <column caption='application_active_users' datatype='real' name='[Calculation_7901211143722948]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(if [name] = &apos;application_active_users&apos; and [period] = &apos;day&apos; then value else null end)' />
+            </column>
+            <column caption='frontpage_view_per_person' datatype='real' name='[Calculation_8591211144225304]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation_1471211141742653]/[Calculation_7901211143722948]' />
+            </column>
+            <column caption='is_end_date' datatype='boolean' name='[Calculation_8671212133151152]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[start_date (copy)] = [run_dt]' />
+            </column>
+            <column datatype='string' name='[entity_id]' role='dimension' type='nominal'>
+            </column>
+            <column-instance column='[Calculation_0051212105019391]' derivation='None' name='[none:Calculation_0051212105019391:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_8671212133151152]' derivation='None' name='[none:Calculation_8671212133151152:nk]' pivot='key' type='nominal' />
+            <column-instance column='[entity_id]' derivation='None' name='[none:entity_id:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_7901211143722948]' derivation='User' name='[usr:Calculation_7901211143722948:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_8591211144225304]' derivation='User' name='[usr:Calculation_8591211144225304:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[vertica.41254.589188055557].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[vertica.41254.589188055557].[usr:Calculation_8591211144225304:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[vertica.41254.589188055557].[usr:Calculation_7901211143722948:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <sort class='manual' column='[vertica.41254.589188055557].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[vertica.41254.589188055557].[usr:Calculation_8591211144225304:qk]&quot;</bucket>
+              <bucket>&quot;[vertica.41254.589188055557].[usr:frontpage_view_per_person (copy):qk]&quot;</bucket>
+              <bucket>&quot;[vertica.41254.589188055557].[usr:Calculation_7901211143722948:qk]&quot;</bucket>
+            </dictionary>
+          </sort>
+          <filter class='categorical' column='[vertica.41254.589188055557].[none:Calculation_8671212133151152:nk]'>
+            <groupfilter function='member' level='[none:Calculation_8671212133151152:nk]' member='true' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[vertica.41254.589188055557].[none:Calculation_0051212105019391:nk]</column>
+            <column>[vertica.41254.589188055557].[:Measure Names]</column>
+            <column>[vertica.41254.589188055557].[none:Calculation_8671212133151152:nk]</column>
+            <column>[vertica.41254.589188055557].[none:entity_id:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[vertica.41254.589188055557].[:Measure Names]' value='174' />
+            <format attr='text-align' field='[vertica.41254.589188055557].[:Measure Names]' value='center' />
+            <format attr='text-align' field='[vertica.41254.589188055557].[Multiple Values]' value='center' />
+            <format attr='font-size' field='[vertica.41254.589188055557].[:Measure Names]' value='12' />
+            <format attr='height' value='19' />
+            <format attr='font-size' field='[vertica.41254.589188055557].[Multiple Values]' value='16' />
+            <format attr='text-format' field='[vertica.41254.589188055557].[usr:Calculation_7901211143722948:qk]' value='n#,##0;-#,##0' />
+            <format attr='text-format' field='[vertica.41254.589188055557].[usr:Calculation_8591211144225304:qk]' value='n#,##0.00;-#,##0.00' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='text-align' data-class='subtotal' field='[vertica.41254.589188055557].[:Measure Names]' value='center' />
+            <format attr='height' field='[vertica.41254.589188055557].[:Measure Names]' value='22' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' field='[vertica.41254.589188055557].[:Measure Names]' value='center' />
+            <format attr='font-size' field='[vertica.41254.589188055557].[:Measure Names]' value='12' />
+            <format attr='font-weight' field='[vertica.41254.589188055557].[:Measure Names]' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text'>
+              <text column='[vertica.41254.589188055557].[Multiple Values]' />
+            </mark>
+            <mark class='Icon'>
+              <text column='[vertica.41254.589188055557].[Multiple Values]' />
+            </mark>
+            <mark class='Shape'>
+              <text column='[vertica.41254.589188055557].[Multiple Values]' />
+            </mark>
+            <mark class='Square'>
+              <text column='[vertica.41254.589188055557].[Multiple Values]' />
+            </mark>
+            <mark class='Circle'>
+              <text column='[vertica.41254.589188055557].[Multiple Values]' />
+            </mark>
+            <mark class='Bar'>
+              <text column='[vertica.41254.589188055557].[Multiple Values]' />
+            </mark>
+            <mark class='GanttBar'>
+              <text column='[vertica.41254.589188055557].[Multiple Values]' />
+            </mark>
+            <mark class='Line'>
+              <text column='[vertica.41254.589188055557].[Multiple Values]' />
+            </mark>
+            <mark class='Automatic'>
+            </mark>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows></rows>
+        <cols>[vertica.41254.589188055557].[:Measure Names]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='frontpage_dashboard'>
+      <style>
+      </style>
+      <size maxheight='1000' maxwidth='1100' minheight='1000' minwidth='1100' />
+      <zones>
+        <zone h='100000' id='4' param='horz' type='layout-flow' w='100000' x='0' y='0'>
+          <zone fixed-size='159' h='100000' id='3' is-fixed='true' param='vert' type='layout-flow' w='14455' x='0' y='0'>
+            <zone h='6700' id='5' name='frontapge_view_per_person_rolling' param='[vertica.41254.589188055557].[:Measure Names]' type='color' w='14455' x='0' y='0'>
+            </zone>
+            <zone fixed-size='68' h='7600' id='7' is-fixed='true' param='[Parameters].[Parameter 1]' type='paramctrl' w='14455' x='0' y='6700'>
+            </zone>
+            <zone h='5000' id='10' name='frontapge_view_per_person_rolling' param='[vertica.41254.589188055557].[none:Calculation_0051212105019391:nk]' type='filter' w='14455' x='0' y='14300'>
+            </zone>
+            <zone h='5100' id='11' param='[Parameters].[Parameter 2]' type='paramctrl' w='14455' x='0' y='19300'>
+            </zone>
+            <zone h='5100' id='12' param='[Parameters].[start_date_selector (copy)]' type='paramctrl' w='14455' x='0' y='24400'>
+            </zone>
+          </zone>
+          <zone h='100000' id='2' type='layout-basic' w='85181' x='14455' y='0'>
+            <zone h='40600' id='1' name='frontapge_view_per_person_rolling' show-caption='true' show-title='true' w='85181' x='14455' y='9400'>
+            </zone>
+            <zone h='50000' id='8' name='frontpage_view_per_person' show-title='true' w='85181' x='14455' y='50000'>
+            </zone>
+            <zone h='9400' id='13' name='summary_yesterday' show-title='true' w='85181' x='14455' y='0'>
+            </zone>
+          </zone>
+        </zone>
+      </zones>
+    </dashboard>
+  </dashboards>
+  <windows>
+    <window class='schema' hidden='false' source-height='-1' />
+    <window auto-hidden='0' class='worksheet' maximized='0' name='frontapge_view_per_person_rolling'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[vertica.41254.589188055557].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='slider' param='[Parameters].[Parameter 1]' type='parameter' />
+            <card mode='compact' param='[Parameters].[Parameter 2]' type='parameter' />
+            <card mode='compact' param='[Parameters].[start_date_selector (copy)]' type='parameter' />
+          </strip>
+        </edge>
+      </cards>
+      <highlight>
+        <color-one-way>
+          <field>[vertica.41254.589188055557].[:Measure Names]</field>
+          <field>[vertica.41254.589188055557].[none:Calculation_0051212105019391:nk]</field>
+          <field>[vertica.41254.589188055557].[none:Calculation_8241212112015455:nk]</field>
+          <field>[vertica.41254.589188055557].[none:entity_id:nk]</field>
+          <field>[vertica.41254.589188055557].[none:name:nk]</field>
+          <field>[vertica.41254.589188055557].[none:run_dt:qk]</field>
+          <field>[vertica.41254.589188055557].[none:segment_key_plaintext:nk]</field>
+          <field>[vertica.41254.589188055557].[none:segment_name:nk]</field>
+          <field>[vertica.41254.589188055557].[yr:run_dt:ok]</field>
+        </color-one-way>
+      </highlight>
+    </window>
+    <window auto-hidden='0' class='worksheet' maximized='0' name='frontpage_view_per_person'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[vertica.41254.589188055557].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='slider' param='[Parameters].[Parameter 1]' type='parameter' />
+          </strip>
+        </edge>
+      </cards>
+      <highlight>
+        <color-one-way>
+          <field>[vertica.41254.589188055557].[:Measure Names]</field>
+          <field>[vertica.41254.589188055557].[none:Calculation_8241212112015455:nk]</field>
+          <field>[vertica.41254.589188055557].[none:entity_id:nk]</field>
+          <field>[vertica.41254.589188055557].[none:name:nk]</field>
+          <field>[vertica.41254.589188055557].[none:run_dt:qk]</field>
+          <field>[vertica.41254.589188055557].[none:segment_name:nk]</field>
+          <field>[vertica.41254.589188055557].[yr:run_dt:ok]</field>
+        </color-one-way>
+      </highlight>
+    </window>
+    <window auto-hidden='0' class='worksheet' maximized='0' name='summary_yesterday'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <highlight>
+        <color-one-way>
+          <field>[vertica.41254.589188055557].[:Measure Names]</field>
+          <field>[vertica.41254.589188055557].[none:Calculation_8671212133151152:nk]</field>
+          <field>[vertica.41254.589188055557].[none:entity_id:nk]</field>
+        </color-one-way>
+      </highlight>
+    </window>
+    <window auto-hidden='0' class='dashboard' maximized='1' name='frontpage_dashboard'>
+      <active id='13' />
+      <zones>
+        <zone name='frontapge_view_per_person_rolling' pane-specification-id='0' param='[vertica.41254.589188055557].[:Measure Names]' type='color'>
+        </zone>
+        <zone mode='slider' name='' param='[Parameters].[Parameter 1]' type='paramctrl'>
+        </zone>
+        <zone mode='dropdown' name='frontapge_view_per_person_rolling' param='[vertica.41254.589188055557].[none:Calculation_0051212105019391:nk]' show-all='false' show-domain='false' show-exclude='false' show-mode='false' show-search='false' type='filter'>
+        </zone>
+        <zone mode='compact' name='' param='[Parameters].[Parameter 2]' type='paramctrl'>
+        </zone>
+        <zone mode='compact' name='' param='[Parameters].[start_date_selector (copy)]' type='paramctrl'>
+        </zone>
+        <zone name='frontapge_view_per_person_rolling'>
+          <viewpoint>
+            <zoom type='entire-view' />
+          </viewpoint>
+        </zone>
+        <zone name='frontpage_view_per_person'>
+          <viewpoint>
+            <zoom type='entire-view' />
+          </viewpoint>
+        </zone>
+        <zone name='summary_yesterday'>
+          <viewpoint>
+            <zoom type='entire-view' />
+          </viewpoint>
+        </zone>
+      </zones>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='frontapge_view_per_person_rolling' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='frontpage_view_per_person' width='192'>
+      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
+      9f8DIItFLgSO0dsAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='45' name='summary_yesterday' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAAAtCAYAAAD4BmRbAAAAAXNSR0IArs4c6QAAAARnQU1B
+      AACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAA
+      Ba9JREFUeF7tXEmWqzAMzPm4Dkuuki1H6GW2XIVj8BksWbYlY/qTZqp+rxdJjAdZpdJg/Hrh
+      DxKABCABSAASgAQgAUgAEoAEHi2BAX+QwIMkkID9QWvHUiGBAQCAEjxaAgDAo7cfiwcAoAOP
+      lgAA8Ojtx+IBAOjAoyUAADx6+7F4ACDQgW6oX68pNWb8N0N3gM70bTVU7/6Akb89pJd3/fn2
+      WHr/AEAEgCYLgPrPAdA1Cxir9p4AIHk3R1iWce8BAIMB6oM2JLZTn9oB4JYMcIzVl6MCAAYD
+      5C1SN7Dlahp2lxg0/XuoAiaJmUM83/XDuxIuFw8cfT/3Vw1tL9yGzvczs4QCEmIQduuqdoi5
+      pHMgm9uM4/fvallT9Q7a8vdubTkjoTOXXPck+Pjzshm5cbR+ef5iQpPbSOtJYRbILcTA8Zg8
+      cgalPqkWK0zKOe1pbcQP7vd5eflYY3F3+qGVwHAAeI8AyLlpEgSJ8hMoBbpjZQviHwEWYqI4
+      PjJjk4+TgwRRR8aiGRaXP5V3AEZhRGgcni8HDVIeFKN546GDNJA/AOAhl1cuL0zRLrCo4nuh
+      ZLyprAza88LiC6VJLZ7YPKXdi+dD7Xzgnlp2Pw8fYyj9M6MJJutbx3JWYoD6qQYiJpKDB03E
+      ACXjxOPyZ2JIySxWzAYGMGgmb5m9ThtMISxcEELwJpEy6M8zbSuW1yvNx7tfchBWHsk0bpmB
+      kkyujXODDCWO58Gf1QSBMp4bNgQvKZ3OhJNxKRvHM+O0HwTqqlpcnllOtA+Ku7dMDQxgAqAs
+      K6H7ruz+RL6z93Vp81d83yIG8JY13FT6XoshXKxB/bO7FllK+t61y7pJo9KZsYDsR1XKUA6l
+      47DSj8q+gGyUa+cYaURFyjTxdnswIgiOgmCqA+Tz0jIQFR0kPm5sgRUGEFZcY4BVt4GGjxmA
+      fPBRQYm5kv6N+ZoMYFpUK27zblBdCwvNzUMm1Nav9kzMNVr9Odkwz4uYcfxujp1sZgIDmHG2
+      YdmT9la77TGAzDZp2RcOZLlhWQyQKpMWY2yNATyY2M145YuDoVsTK6UVA6yNE8VqjoKCADoL
+      VsQAqzFAvg5gZ4tsGjd8X1EBzcUAlH2pPz4G0CrWPjliZaNEDDDlmijlKTMuzp/2AfWU3NKr
+      46sVapkSTpQyZdLSbJOcT8JwRkpYJjtExR9ZIC0LVFwH0Apmm+oAfnQ9/x4G5s2Y+2c3LaoD
+      xKANlHtWPi0QDZV7ygZZdYAYBKvKPy/NM0/aXmfSonHYfROxkJB76f4hBjDdobP+UOqmlcxf
+      gEsEPanbVdLXldogC3Sl3YrmagTgv1yRWSzLZXd+OdZ5HkMMcJ692DwTow6wuR/h+LkDdzKm
+      OMtZqP9YVuZRMMB35IpeLycBxACX2zJMeE8JAAB7ShN9XU4CjwHAz8/PgH/IINaBxwDgcqbp
+      LyacHN3e/sZb2QE2ezFzFio5O/UXi1/GAAD+TtanGsmq7ObP0KRLsCq3S0YpPrAXPl989ueL
+      kgMAvijc03ZtHJ1O31tYWwEdTd7OHEH9AQywJmj8vqcESPnS4wJ0bCFvuUUFYTmWseWUqDwm
+      Mr5Ouvn5PQUBF2hnaV6iO1Jy/RQnuSVFt1CQMm+omoXgcxVZMMAlNOcmk3SVZEvp6D2CEqV2
+      B9Kqtk3uUyp5nM/lb2GQnXcBMcDOAj19d/wySXo7xDx3+r3gop61N7heqygAA5xeX243QXJb
+      LAZgt2b9qjbz1CgfVc68LjkL1p3JAQPcTs3Ou6AdGSC7SAJBlknAAOdVlNvObMcYII+A5faK
+      bIALBritmp13YTtmgXKLXGMa5wKtg+S7kkQQ/F35nrL3feoA9F6CXgTzN7jlLlkFA5xSQW4/
+      KT4DFN7SsK0SrN9kNyeS+EX73NUkSxAMBri9tp1zgZvOAokb5ILcUHzjXHRz3Hox7XgG+Adj
+      jQAH0qBhwwAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='frontpage_dashboard' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
